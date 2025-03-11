@@ -92,7 +92,7 @@ To use this with Claude Desktop, add the following to your
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-websearch"
+        "openai-websearch-mcp"
       ],
       "env": {
         "OPENAI_API_KEY": "<YOUR_OPENAI_API_KEY>"
@@ -103,6 +103,14 @@ To use this with Claude Desktop, add the following to your
 ```
 
 #### Using Docker
+
+Pull the image from the [GitHub Container Registry (ghrc.io): OpenAI WebSearch
+MCP](https://github.com/tiovikram/openai-websearch-mcp/pkgs/container/openai-websearch-mcp)
+
+```bash
+docker pull ghcr.io/tiovikram/openai-websearch-mcp
+docker tag ghcr.io/tiovikram/openai-websearch-mcp openai-websearch-mcp
+```
 
 ```json
 {
@@ -115,7 +123,7 @@ To use this with Claude Desktop, add the following to your
         "--rm",
         "-e",
         "OPENAI_API_KEY",
-        "mcp/websearch"
+        "openai-websearch-mcp"
       ],
       "env": {
         "OPENAI_API_KEY": "<YOUR_OPENAI_API_KEY>"
