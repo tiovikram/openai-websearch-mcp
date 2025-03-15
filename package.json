@@ -1,8 +1,11 @@
 {
   "name": "openai-websearch-mcp",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "MCP server implementation OpenAI WebSearch",
   "main": "dist/index.js",
+	"bin": {
+		"openai-websearch-mcp": "./dist/index.js"
+	},
   "type": "module",
   "scripts": {
     "build": "tsc",
